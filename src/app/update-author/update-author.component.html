@@ -1,0 +1,40 @@
+
+<div class="container">
+  <div class="row">
+    
+    <div class="col-md-12"> 
+      
+      <div class="panel">
+        <div class="panel-body">
+          
+          
+          
+          <!--/stories-->
+          <div class="row">  
+            <div class="addbook-wrap"> 
+              <div class="addbook-html">
+                <form  (ngSubmit)="editauthor()" class="addbook-form">
+                  <h2>Edit Author</h2>
+                    <label for="name"  class="text">Name</label>
+                    <input type="text" name="name" value="{{author.name}}" autocomplete="off" class="input" required><br>
+                    <label for="about" class="text">About Author</label>
+                    <textarea rows = "5" cols = "60"  type="text" name="about" autocomplete="off" class="aboutinput" required>
+                      {{author.about}}
+                    </textarea><br>
+                    <label for="image" class="text">Image</label>
+                    <input type="file" name="image" autocomplete="off" class="input" required><br>
+                    <div class="group">
+                      <button type="submit" class="btn">Update</button>
+                    </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <hr>
+          <!--/stories-->
+        </div>
+      </div>
+   	</div><!--/col-12-->
+  </div>
+</div>
+        

@@ -1,0 +1,45 @@
+<div class="container">
+  <div class="row">
+    
+    <div class="col-md-12"> 
+      
+      <div class="panel">
+        <div class="panel-body">
+          
+          
+          
+          <!--/stories-->
+          <div class="row">  
+            <div class="addbook-wrap"> 
+              <div class="addbook-html">
+                <form class="addbook-form" (ngSubmit)="AddBook()">
+                  <h2>Add Book</h2>
+                    <label for="title" class="text">Title</label>
+                    <input type="text" name="title" autocomplete="off" class="input" [(ngModel)]="bookItem.title" required><br>
+                    <label for="author" class="text">Author</label>
+                    <input type="text" name="author" autocomplete="off" required [(ngModel)]="bookItem.author" class="input"><br>
+                    <label for="genre" class="text">Genre</label>
+                    <input type="text" name="genre" autocomplete="off" class="input" [(ngModel)]="bookItem.genre" required><br>
+                    <label for="about" class="text">About Book</label>
+                    <textarea rows = "5" cols = "60"  type="text" name="about" autocomplete="off" class="aboutinput" [(ngModel)]="bookItem.about" required>
+                    </textarea><br>
+                    <label for="image" class="text">Image</label>
+                    <input type="file" name="image" autocomplete="off" class="input" [(ngModel)]="bookItem.image" required><br>
+                    <div class="group">
+                      <button type="submit" class="btn">Add</button>
+                    </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <hr>
+          <!--/stories-->
+        </div>
+      </div>
+                                                                                       
+	                                                
+                                                      
+   	</div><!--/col-12-->
+  </div>
+</div>
+    

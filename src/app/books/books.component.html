@@ -1,0 +1,27 @@
+<div class="container">
+  <div class="row">
+    
+    <div class="col-md-12"> 
+      
+      <div class="panel">
+        <div class="panel-body">
+          
+          
+          
+          <!--/stories-->
+          <div class="row" *ngFor='let book of books'>    
+            <br>
+            <div class="col-md-2 col-sm-3 text-center">
+              <a class="story-title" href="#"><img [src]='book.image' style="width:100px;height:100px" class="img-circle"></a>
+            </div>
+            <div class="col-md-10 col-sm-9">
+              <h3>{{book.title}}</h3>
+              <div class="row">
+                <div class="col-xs-9">
+                  <h4><span class="label label-default">{{book.author}}</span></h4><h4>
+                  <small style="font-family:courier,'new courier';" class="text-muted">{{books.genre}}  • 
+                    <a (click)="viewbook(book)" style="cursor:pointer" class="text-muted">Read More</a></small>
+                <div class="col-xs-3"></div>
+              <br><br>
+          <hr>
+          <!--/stories-->
